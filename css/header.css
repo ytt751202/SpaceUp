@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+ul , li {
+  margin: 0;
+  padding: 0
+}
+
+/*============ header區域 ============*/
+
+
+.nav_pc {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 30px;
+
+}
+.nav_pc .logo{
+  max-width: 220px;
+  width: 100%;
+  padding: 10px;
+  }
+
+.logo>img {
+  width: 100%
+}
+
+ul.links_item {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.links_item>li {
+  padding: 10px;
+  font-size: 20px;
+}
+
+ul.links_item>li>a {
+  text-decoration: none;
+  color: rgb(121, 122, 117);
+  align-items: center;
+}
+
+ul.links_item>li>a:hover {
+  text-decoration: underline;
+}
+
+ul.links_item>li>a>img {
+  width: 18px;
+}
+
+ul.links_item>li>a>:hover {
+  transform: scale(1.5);
+}
+
+/* 問 */
+/* ul.links_item>li>a:nth-child(6) {
+  margin-right: 40px;
+} */
+
+/* ============ 螢幕寬度縮小後的導覽列 ============ */
+.smlnav {
+  display: none;
+}
+
+/* ============ rwd側欄區塊  螢幕縮小時滑入============ */
+aside.aside-rwd {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  display: block;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  transform: translateX(100%);
+  transition: all 1s;
+  z-index: 999;
+}
+
+aside.aside-rwd.-on {
+  transform: translateX(0%);
+}
+
+aside.aside-rwd>.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo>.side-logo, .logo>.side-logo{
+  max-width: 150px;
+  width:100%;
+
+}
+.logo>.side-logo, .logo>.side-logo>img {
+  width:100%;
+}
+
+.close_icon>.rwd-close {
+  max-width: 40px;
+  width: 100%;
+}
+
+.close_icon>.rwd-close>img {
+  max-width: 40px;
+  width: 100%;
+}
+
+.close_icon>.rwd-close>img {
+  max-width: 30px;
+  width: 100%;
+}
+
+aside.aside-rwd>ul.links_item {
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+}
+
+aside.aside-rwd>ul.links_item>li {
+  padding: 10px;
+}
+
+/* ============ 螢幕小於767px時 ============ */
+@media screen and (max-width:767px) {
+
+  /* 1.大導覽列消失*/
+  nav.nav_pc {
+    display: none;
+  }
+
+  /* 2.小導覽列出現 */
+  .smlnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .smlnav_icon {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    width:100%;
+
+  }
+
+  .smlnav_icon img {
+    width: 100%;
+  }
+
+
+  .smlnav>.hamburg a.rwd-menu {
+    max-width: 40px;
+    width: 100%;
+  }
+
+  .smlnav>.hamburg a.rwd-menu>img {
+    max-width: 30px;
+    width: 100%;
+  }
+
+  aside.aside-rwd>ul.links_item>li:nth-child(4),  aside.aside-rwd>ul.links_item>li:nth-child(5),   aside.aside-rwd>ul.links_item>li:nth-child(6){
+    display: inline-block;
+  }
+
+
+}

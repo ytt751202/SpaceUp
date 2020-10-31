@@ -1,0 +1,184 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+/*============ header區域 ============*/
+.nav_pc {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding:20px;
+
+}
+
+.logo > img {
+  width:300px;
+
+}
+
+ul.links_item {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.links_item > li {
+  /* border:1px solid red; */
+  font-size: 20px;
+  margin-right: 10px;
+
+}
+
+ul.links_item > li > a {
+  text-decoration: none;
+  color: rgb(121, 122, 117);
+  font-weight: bold;
+  align-items: center;
+}
+
+ul.links_item > li > a > img {
+  width:28px;
+}
+
+/* 問 */
+ul.links_item > li > a:nth-child(6) {
+  margin-right: 40px;
+}
+/* ============ 螢幕寬度縮小後的導覽列 ============ */
+.smlnav {
+  display: none;
+}
+
+
+
+
+/* ============ rwd側欄區塊  螢幕縮小時滑入============ */
+
+
+aside.aside-rwd {
+  display: block;
+  width:100%;
+  margin: auto;
+  background-color: rgba(221, 222, 212, 0.64);
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 1s;
+  z-index: 0;
+}
+
+aside.aside-rwd.-on{
+        transform: translateX(0%);
+      }
+
+
+aside.aside-rwd >.logo > img{
+  display: block;
+  margin: 30px auto;
+}
+
+.close_icon > .rwd-close > img {
+  width:50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+aside.aside-rwd > ul.links_item{
+  display: block;
+  text-align: center;
+}
+
+aside.aside-rwd > ul.links_item > li {
+  padding:20px;
+}
+
+/* ============ 螢幕小於767px時 側邊欄關閉 XX出現============ */
+
+aside.aside-rwd .-asideClose {
+  display: none;
+}
+
+
+
+
+/* ============ 螢幕小於767px時 ============ */
+
+@media screen and (max-width:767px) {
+  /* 1.大導覽列消失*/
+  nav.nav_pc {
+    display: none;
+  }
+
+  /* 2.小導覽列出現 */
+  .smlnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .smlnav_icon{
+    margin-right: 10px;
+  }
+
+  .smlnav .span {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+.smlnav > .hamburg a.rwd-menu > img {
+  width:50px;
+}
+
+.hamburg {
+  position: relative;
+  z-index: 1000;
+
+}
+
+
+  /* 3.按下漢堡後 出現側邊欄 */
+
+  .smlnav.-off {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* ============ main區塊 ============ */
+
+/* .section1 {
+  border:1px solid pink;
+  height: calc(100vh - 42px);
+
+} */
+
+/* section1 {
+ border:1px solid pink;
+ width:100%;
+ min-height:100vh;
+ background-image: url("../image/02.1st/index.jpg");
+ background-size: contain;
+ background-repeat: no-repeat;
+ padding-top: 100%;
+ z-index: 0;
+} */
