@@ -1,184 +1,482 @@
-
 * {
   box-sizing: border-box;
 }
 
-body {
+body, button {
   margin: 0;
-  padding:0;
+  padding: 0;
   font-family: 'Montserrat Alternates', sans-serif;
-
 }
 
-/*============ header區域 ============*/
-.nav_pc {
-  border: 1px solid red;
-  display: flex;
-  justify-content: center;
-  padding:20px;
-
+h1 {
+  margin: 0;
 }
 
-.logo > img {
-  width:300px;
-
+.bannerPic {
+  width: 100%;
+  /* max-height: 100vh; */
+  /* height: 100%; */
+  /* overflow: hidden; */
 }
 
-ul.links_item {
-  list-style: none;
-  display: flex;
+.bannerPic .picDesk {
+  position: relative;
+}
+
+.bannerPic img {
+  width: 100%;
+}
+
+.bannerPic .pictxt {
+  position: absolute;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
-}
-
-ul.links_item > li {
-  /* border:1px solid red; */
-  font-size: 20px;
-  margin-right: 10px;
-
-}
-
-ul.links_item > li > a {
-  text-decoration: none;
-  color: rgb(121, 122, 117);
   font-weight: bold;
+  font-size: 35px;
+}
+
+section.section2 {
+  display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 120px;
 }
 
-ul.links_item > li > a > img {
-  width:28px;
+.mission {
+  font-size: 25px;
 }
 
-/* 問 */
-ul.links_item > li > a:nth-child(6) {
-  margin-right: 40px;
-}
-/* ============ 螢幕寬度縮小後的導覽列 ============ */
-.smlnav {
-  display: none;
+.mission_content1 {
+  max-width: 700px;
+  width: 100%;
+  padding: 20px;
+  letter-spacing: 0.05rem;
 }
 
-
-
-
-/* ============ rwd側欄區塊  螢幕縮小時滑入============ */
-
-
-aside.aside-rwd {
-  display: block;
-  width:100%;
-  margin: auto;
-  background-color: rgba(221, 222, 212, 0.64);
-  position: fixed;
-  top: 0;
-  right: 0;
-  transform: translateX(100%);
-  transition: all 1s;
-  z-index: 0;
+.mission_content1 p.p1 {
+  line-height: 25px;
 }
 
-aside.aside-rwd.-on{
-        transform: translateX(0%);
-      }
-
-
-aside.aside-rwd >.logo > img{
-  display: block;
-  margin: 30px auto;
-}
-
-.close_icon > .rwd-close > img {
-  width:50px;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-aside.aside-rwd > ul.links_item{
-  display: block;
+section.section3 {
   text-align: center;
 }
 
-aside.aside-rwd > ul.links_item > li {
-  padding:20px;
+section.section3 .forshop {
+  display: inline-flex;
 }
 
-/* ============ 螢幕小於767px時 側邊欄關閉 XX出現============ */
+.shop_pic_border {
+  max-width: 600px;
+  width: 100%;
+}
 
-aside.aside-rwd .-asideClose {
+.shop_pic_border img {
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.shop_pic_border img:hover {
+  transition: all 0.6s;
+  transform: scale(0.9);
+  opacity: 85%;
+  cursor: pointer;
+}
+
+.shop_words {
+  padding: 30px;
+  line-height: 60px;
+  width: 100%;
+}
+
+.shop_words .shop_subtitle1 {
+  line-height: 2;
+}
+
+.shop_words .shop_subtitle2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.shop_words .shop_subtitle3 a.shop_subtitle3 {
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid black;
+  max-width: 80px;
+  font-size: 0;
+  font-size: 20px;
+  position: relative;
+  top: 40px;
+  color: black;
+}
+
+.shop_words .shop_subtitle3 a.shop_subtitle3:hover {
+  background-color: lightgrey;
+  color: #fff;
+}
+
+.feature h1 {
+  text-align: center;
+  padding: 30px 0px;
+  font-size: 35px;
+}
+
+.gallery_container {
+  display: flex;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.gallery {
+  width: 100%;
+  margin: auto;
+}
+
+.gallery_container img {
+  width: 100%;
+}
+
+/* feature products */
+.gallery a .desc {
+  max-height: 40px;
+  height: 100%;
+}
+
+.img-all {
+  max-width: 323px;
+  width: 100%;
+  padding-top: 112%;
+  margin: auto;
+  position: relative;
+}
+
+.img-backpacker {
+  background: url("../image/featured/backpacker.jpg") no-repeat;
+  background-size: contain;
+}
+
+.img_hover_btn {
   display: none;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid #000;
+  width: 200px;
+  cursor: pointer;
 }
+
+.img_hover_btn:hover {
+  transition: .5s;
+  background: lightgrey;
+  color: #fff;
+}
+
+.img-backpacker:hover {
+  background: url("../image/featured/bg-backpacker.jpg") no-repeat;
+  background-size: contain;
+  transition: all 0.3s;
+}
+
+.img-all:hover .img_hover_btn {
+  display: inline-block;
+}
+
+.gallery a.backpacker {
+  text-decoration: none;
+  color: black;
+}
+
+.img-bikelight {
+  background: url("../image/featured/bikelight.jpg") no-repeat;
+  background-size: contain;
+}
+
+.img-bikelight:hover {
+  background: url("../image/featured/bg-bikelight.jpg") no-repeat;
+  background-size: contain;
+  transition: all 0.3s;
+}
+
+.gallery a.bikelight {
+  text-decoration: none;
+  color: black;
+}
+
+.img-kitchen {
+  background: url("../image/featured/kitchen.jpg") no-repeat;
+  background-size: contain;
+}
+
+.img-kitchen:hover {
+  background: url("../image/featured/bg-kitchen.jpg") no-repeat;
+  background-size: contain;
+  transition: all 0.3s;
+}
+
+.gallery a.kitchen {
+  text-decoration: none;
+  color: black;
+}
+
+.img-cooker {
+  background: url("../image/featured/cooker.jpg") no-repeat;
+  background-size: contain;
+}
+
+.img-cooker:hover {
+  background: url("../image/featured/bg-cooker.jpg") no-repeat;
+  background-size: contain;
+  transition: all 0.3s;
+}
+
+.gallery a.cooker {
+  text-decoration: none;
+  color: black;
+}
+
+section.section5 .ackbg {
+  padding-top: 300px;
+  background-image: url("../image/acknowledgement/pexels-ákos-szabó-440731.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.section6 h1.ack {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 35px
+}
+
+section.section6 .ack-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+section.section6 .ack-container .flex {
+  /* max-width: 300px; */
+  /* width: 100%; */
+  text-align: center;
+  margin: 10px;
+}
+
+section.section6 .img {
+  max-width: 200px;
+  width: 100%;
+  margin: auto;
+}
+
+section.section6 .img img {
+  width: 100%;
+}
+
+section.section6 .ack-container .flex p {
+  max-width: 260px;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+  /* height: 275px; */
+  margin: auto;
+}
+
+section.section6 .ack-container .flex h2 {
+  font-size: 22px;
+}
+
+section.section7 .actbg{
+  max-width: 800px;
+  width:100%;
+  height: 340px;
+  margin: 30px auto;
+  background: url(..//image/activism/activism.jpg) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+section.section7 .actbg h1 {
+  font-size: 35px;
+  position: absolute;
+  top: 160px;
+  right: 30px;
+}
+
+section.section7 .actbg p{
+  position: absolute;
+  top: 200px;
+  right: 70px;
+  max-width: 360px;
+  width: 100%
+}
+
+/* activism story */
+.actStory_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.actitem {
+  max-width: calc((100% - 100px) / 4);
+  width:100%;
+  padding: 5px;
+  position: relative;
+}
+
+.actitem img{
+  width:100%;
+}
+.actitem h1{
+  text-align: center;
+
+}
+.actitem button{
+  padding: 5px;
+  font-size: 14px;
+}
+
+section.section8{
+  margin-top: 50px;
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+section.section8 h1{
+text-align: center;
+font-size: 35px;
+}
+
+section.section8 h4{
+  text-align: center;
+  padding: 20px;
+  font-weight: normal;
+  margin:0px;
+}
+section.section8 input{
+  padding: 5px;
+  font-family: 'Montserrat Alternates';
+  width: 260px;
+}
+section.section8 button{
+  padding:5px;
+  color:black
+}
+section.section8 .input{
+  text-align: center;
+}
+
 
 
 
 
 /* ============ 螢幕小於767px時 ============ */
-
 @media screen and (max-width:767px) {
-  /* 1.大導覽列消失*/
-  nav.nav_pc {
-    display: none;
+
+  section.section2 {
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
   }
 
-  /* 2.小導覽列出現 */
-  .smlnav {
+  .bannerPic .pictxt span.text{
+    font-size: 50%;
+  }
+
+  section.section2 .mission h1 {
+    margin: 0;
+  }
+
+  .mission_content1 {
+    padding: 0;
+  }
+
+  section.section3 .forshop {
+    flex-wrap: wrap-reverse;
+    width: 330px;
+  }
+
+  section.section3 .forshop .shop_words {
+    padding: 0;
+    line-height: 30px;
+  }
+
+  .shop_pic_border {
+    padding: 30px 10px 0px 10px;
+  }
+
+  .shop_pic_border img {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .feature h1 {
+    padding: 0px;
+  }
+
+  .gallery_container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    flex-wrap: wrap;
   }
 
-  .smlnav_icon{
-    margin-right: 10px;
+  .gallery_container .gallery {
+    width: calc(100% / 2);
+    padding: 5px;
   }
 
-  .smlnav .span {
-    margin-right: 10px;
-    font-weight: bold;
+  .img-backpacker, .img-bikelight, .img-cooker, .img-kitchen {
+    height: 230px;
+    /* width: 210px; */
   }
 
-.smlnav > .hamburg a.rwd-menu > img {
-  width:50px;
-}
+  .gallery a .desc {
+    margin: 20px 0 40px 0;
+  }
 
-.hamburg {
-  position: relative;
-  z-index: 1000;
+  .img_hover_btn {
+    width: 120px;
+  }
 
-}
+  section.section5 .ackbg {
+    padding-top: 180px;
+  }
 
+  section.section6 .ack-container {
+    display: block;
+  }
 
-  /* 3.按下漢堡後 出現側邊欄 */
+    section.section7 .actbg h1 {
+      width: 160px;
+      right: 30px;
+    }
 
-  .smlnav.-off {
+  section.section7 .actbg p{
     display: none;
   }
 
+  .actStory_container {
+    display: flex;
+  }
+  .actitem {
+    max-width: 50%;
+    padding: 5px;
+
+}
+
+section.section8 button {
+  margin-top: 10px;
 
 
+}
 
-
-
-
-
-
-
-
-/* ============ main區塊 ============ */
-
-/* .section1 {
-  border:1px solid pink;
-  height: calc(100vh - 42px);
-
-} */
-
-/* section1 {
- border:1px solid pink;
- width:100%;
- min-height:100vh;
- background-image: url("../image/02.1st/index.jpg");
- background-size: contain;
- background-repeat: no-repeat;
- padding-top: 100%;
- z-index: 0;
-} */
+}

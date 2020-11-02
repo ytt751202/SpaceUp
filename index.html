@@ -13,9 +13,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
   <style media="screen">
-    /* @import "./css/newCss.css"; */
     @import "./css/header.css";
-    @import "./css/body.css";
+    @import "./css/index.css";
+    @import "./css/footer.css";
     @import "./css/animate.min.css";
     /* @import "./css/gasp.js"; */
   </style>
@@ -31,7 +31,7 @@
     <div class="initial"></div>
     <nav class="nav_pc">
       <div class="logo">
-        <img src="./image/index-logo-lg.png" alt="">
+        <a href="index.html"><img src="./image/index-logo-lg.png" alt=""></a>
       </div>
 
       <ul class="links_item">
@@ -44,7 +44,7 @@
       </ul>
     </nav>
 
-    <!-- width 500 -->
+
     <div class="smlnav">
       <div class="smlnav_icon">
         <a href="./index.html" class="icon_img"><img src="./image/index-logo-lg.png"></a>
@@ -84,27 +84,27 @@
       <div class="banner wrap">
         <div class="bannerPic">
           <div class="picDesk">
+            <img class="pic4 w3-animate-fading" src="./image/02.1st/index.jpg">
+            <div class="pictxt">
+              <span class="text">
+                <h1>Keep It Green To the Space</h1>Supporting a plastic-free outdoor life with us
+              </span>
+            </div>
+          </div>
+          <div class="picDesk">
             <img class="pic1 w3-animate-fading" src="./image/02.1st/pinic.jpg">
             <div class="pictxt">
-              Supporting a plastic-free outdoor life with us
             </div>
           </div>
           <div class="picDesk">
             <img class="pic2 w3-animate-fading" src="./image/02.1st/essential.jpg">
             <div class="pictxt">
-              Supporting a plastic-free outdoor life with us
+              <h1>Winter Sales<br>30%OFF</h1>
             </div>
           </div>
           <div class="picDesk">
             <img class="pic3 w3-animate-fading" src="./image/02.1st/food.jpg">
             <div class="pictxt">
-              5555555
-            </div>
-          </div>
-          <div class="picDesk">
-            <img class="pic4 w3-animate-fading" src="./image/02.1st/index.jpg">
-            <div class="pictxt">
-              5555555
             </div>
           </div>
 
@@ -247,23 +247,71 @@
 
 
     <section class="section7">
-      <h1>Activism</h1>
+      <div class="actbg">
+        <h1>Explore Activism Stories</h1>
+        <p>Discover the most pressing stories from environmental protectors across the world.</p>
+      </div>
 
+      <div class="actStory_container">
+        <div class="actitem">
+          <img src="./image/activism/planet.png" alt="">
+          <h1>1% for the Planet</h1>
+          <!-- <div class="actiem_hover">
+            <p class="desc">SpaceUP’s self-imposed Earth tax, 1% for the Planet, provides support to environmental nonprofits working to defend our air, land and water around the globe.</p>
+            <button class="learn">Learn More</button>
+          </div> -->
+        </div>
+        <div class="actitem">
+          <img src="./image/activism/mission.jpg" alt="">
+          <h1>marine pollution</h1>
+        </div>
+        <div class="actitem">
+          <img src="./image/activism/noplastic.jpg" alt="">
+          <h1>plastic war</h1>
+        </div>
+        <div class="actitem">
+          <img src="./image/activism/protest.jpg" alt="">
+          <h1>fighting for home</h1>
+        </div>
+      </div>
     </section>
 
-
-
-
-
+    <section class="section8">
+      <h1>join spaceUP</h1>
+      <h4>Join our email list to receive news about product launches & events, creative gear-use insights and outdoor inspiration.</h4>
+      <div class="input">
+        <input type="text" name="subscribe" value="Email Address">
+        <button type="button" name="button">subscribe</button>
+      </div>
+    </section>
   </main>
 
+  <!--============ footer ============-->
 
+  <footer class="footer">
+    <nav class="footer">
+      <div class="logo">
+        <a href="index.html">
+        <img src="./image/index-logo-lg.png" alt=""></a>
+      </div>
 
+      <ul class="footer_links_item">
+        <li><a href="camping.html">Shop</a></li>
+        <li><a href="#">Activism</a></li>
+        <li><a href="#">AboutUs</a></li>
+      </ul>
 
+        <ul class="footer_icons">
+          <li><a href="http://www.facebook.com"><img src="image/footer/Facebook.png"</a></li>
+          <li><a href="http://www.instargram.com"><img src="./image/footer/Instagram.png"</a></li>
+          <li><a href="http://www.twitter.com"><img src="./image/footer/Twitter.png"</a></li>
+      </ul>
+    </nav>
 
-
-
-
+    <div class="end">
+      © Company Name 2020. All rights reserved.
+    </div>
+  </footer>
 
   <script src="./css/gsap.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
