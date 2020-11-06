@@ -36,9 +36,9 @@
       </div>
 
       <ul class="links_item">
-        <li><a href="camping.html">Shop</a></li>
-        <li><a href="#">Activism</a></li>
-        <li><a href="#">AboutUs</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="activism.html">Activism</a></li>
+        <li><a href="abouts.html">AboutUs</a></li>
         <li><a href="./login.html" class="account_img"><img src="./image/01.header/account.png"></a></li>
         <li><a href="./shoppingcart.html" class="cart_img"><img src="./image/01.header/cart.png"></a></li>
         <li><a href="./index.html" class="search_img"><img src="./image/01.header/search.png"></a></li>
@@ -82,7 +82,7 @@
   <section class="section1">
     <div class="intro">
       <div class="textAll">
-        <h1>All</h1>
+        <h1>Shop</h1>
         <span>Explore our full collection of lifetime-guaranteed products, designed to provide rejuvenating experiences outdoors.</span>
       </div>
       <div class="img_s1">
@@ -97,12 +97,11 @@
       <ol class="breadcrumb_list">
         <li><a href="index.html">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
-        <li><a href="shop.html">All</a></li>
       </ol>
     </div>
 
     <div class="sortBy">
-      Sort By: Featured ▼
+      Sort By: Featured ⌵
       <ul class="sort">
         <li><a href="#">Featured</a></li>
         <li><a href="#">Best selling</a></li>
@@ -114,12 +113,19 @@
         <li><a href="#">Date, new to old</a></li>
       </ul>
 
+      <div class="filterIcon">
+        <img src="./image/shop/filter.png" alt="">
+      </div>
+
     </div>
+
+
   </div>
 
 
   <main class="main">
     <aside class="aside">
+      <button type="button" class="btn_modal_close">✖</button>
       <ul class="nav_list">
         <li>
           <h3>Category</h3>
@@ -164,98 +170,483 @@
       </ul>
     </aside>
 
-    <section class="container">
-      <!-- products gallery -->
-      <ul class="item_list">
-        <li>
-          <a href="#">
-            <div class="img_block">
-              <img src="https://via.placeholder.com/325x400" alt="">
-            </div>
-            <span class="item_text">1這是影片標題1這是影片標題1這是影片標題</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <div class="img_block">
-              <img src="https://via.placeholder.com/325x400" alt="">
-            </div>
-            <span class="item_text">1這是影片標題1這是影片標題1這是影片標題</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <div class="img_block">
-              <img src="https://via.placeholder.com/325x400" alt="">
-            </div>
-            <span class="item_text">1這是影片標題1這是影片標題1這是影片標題</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <div class="img_block">
-              <img src="https://via.placeholder.com/325x400" alt="">
-            </div>
-            <span class="item_text">1這是影片標題1這是影片標題1這是影片標題</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <div class="img_block">
-              <img src="https://via.placeholder.com/325x400" alt="">
-            </div>
-            <span class="item_text">1這是影片標題1這是影片標題1這是影片標題</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="img_block">
-              <img src="https://via.placeholder.com/325x400" alt="">
-            </div>
-            <span class="item_text">1這是影片標題1這是影片標題1這是影片標題</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="img_block">
-              <img src="https://via.placeholder.com/325x400" alt="">
-            </div>
-            <span class="item_text">1這是影片標題1這是影片標題1這是影片標題</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="img_block">
-              <img src="https://via.placeholder.com/325x400" alt="">
-            </div>
-            <span class="item_text">1這是影片標題1這是影片標題1這是影片標題</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <div class="img_block">
-              <img src="https://via.placeholder.com/325x400" alt="">
-            </div>
-            <span class="item_text">1這是影片標題1這是影片標題1這是影片標題</span>
-          </a>
-        </li>
-      </ul>
 
 
+    <div class="tab_container">
+
+      <div class="tab_list_block">
+        <ul class="tab_list">
+          <li><a href="#" data-target="tab1" class="tab -on">camping</a></li>
+          <li><a href="#" data-target="tab2" class="tab">yogaing</a></li>
+          <li><a href="#" data-target="tab3" class="tab">cycling</a></li>
+          <li><a href="#" data-target="tab4" class="tab">hiking</a></li>
+        </ul>
+      </div>
+
+      <div class="tab_contents">
+
+        <div class="tab tab1 -on">
+          <section class="container">
+            <ul class="item_list">
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="./image/shop/trybackpacker.jpg" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="./image/shop/trybikelight.jpg" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>Baterry-Free Bike Light</h4>
+                    <h5>$59.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="./image/shop/trycooker.jpg" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>Titanium Cook & Save</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://source.unsplash.com/325x400/?backpacker" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://source.unsplash.com/325x400/" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://source.unsplash.com/325x400/?camping" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://source.unsplash.com/325x400/?sleepingbag" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://source.unsplash.com/325x400/?camping" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://source.unsplash.com/325x400/?tent" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+            </ul>
+
+          </section>
 
 
-    </section>
+        </div>
+
+        <div class="tab tab2">
+          <section class="container">
+            <ul class="item_list">
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+        </div>
+
+        <div class="tab tab3">
+          <section class="container">
+            <ul class="item_list">
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+        </div>
+
+        <div class="tab tab4">
+          <section class="container">
+            <ul class="item_list">
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_block">
+                    <img src="https://via.placeholder.com/325x400" alt="">
+                  </div>
+                  <span class="item_text">
+                    <h4>100% Repreve®Polyester Backpacker</h4>
+                    <h5>$217.50</h5>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+        </div>
 
 
+      </div>
 
+      <div class="pagination_block">
+        <ul class="pagination">
+          <li><a href="#">&lt;</a></li>
+          <li><a href="#" class="-on">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">&gt;</a></li>
+        </ul>
+      </div>
 
-
-
-
+    </div>
 
   </main>
 
@@ -273,27 +664,44 @@
       </div>
 
       <ul class="footer_links_item">
-        <li><a href="camping.html">Shop</a></li>
-        <li><a href="#">Activism</a></li>
-        <li><a href="#">AboutUs</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="activism.html">Activism</a></li>
+        <li><a href="aboutus.html">AboutUs</a></li>
       </ul>
 
       <ul class="footer_icons">
-        <li><a href="http://www.facebook.com"><img src="image/footer/Facebook.png" </a></li>
-        <li><a href="http://www.instargram.com"><img src="./image/footer/Instagram.png" </a></li>
-        <li><a href="http://www.twitter.com"><img src="./image/footer/Twitter.png" </a></li>
+        <li><a href="http://www.facebook.com"><img src="image/footer/Facebook.png"> </a></li>
+        <li><a href="http://www.instargram.com"><img src="./image/footer/Instagram.png"> </a></li>
+        <li><a href="http://www.twitter.com"><img src="./image/footer/Twitter.png"> </a></li>
       </ul>
     </nav>
 
     <div class="end">
       © Company Name 2020. All rights reserved.
     </div>
+
+    <!-- slideTop button -->
+    <button type="button" id="go_top">↑</button>
   </footer>
 
   <script src="./css/gsap.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- forHamburg -->
+  <script>
+    $(function() {
+      $("div.hamburg a.rwd-menu").on("click", function(e) {
+        e.preventDefault();
+        $("aside.aside-rwd").toggleClass("-on");
 
+      });
+      $(".close_icon .rwd-close").on("click", function() {
+        $("aside.aside-rwd").toggleClass("-on");
+      });
+    });
+  </script>
 
+  <!-- tab頁籤切換 -->
   <script type="text/javascript">
     $(function() {
       $("a.tab").on("click", function(e) {
@@ -308,21 +716,39 @@
         $("div.tab." + $(this).attr("data-target")).addClass("-on");
       });
     });
-    </script>
+  </script>
 
-    <script>
-      $(function() {
-        $("div.hamburg a.rwd-menu").on("click", function(e) {
-          e.preventDefault();
-          $("aside.aside-rwd").toggleClass("-on");
-
-        });
-        $(".close_icon .rwd-close").on("click", function() {
-          $("aside.aside-rwd").toggleClass("-on");
-        });
+  <!-- filter icon -->
+  <script>
+    $(function() {
+      $(".filterIcon").on("click", function(e) {
+        e.preventDefault();
+        $("aside.aside").toggleClass("-on");
       });
-    </script>
+      $(".btn_modal_close").on("click", function(e) {
+        e.preventDefault();
+        $("aside.aside").toggleClass("-on");
+      });
 
+    });
+  </script>
+
+
+  <!-- for slideTop btn -->
+  <script type="text/javascript">
+    // DOM 載入完成後執行
+    $(function() {
+
+      // 點擊按鈕，頁面滑到最上方
+      $("#go_top").on("click", function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: 0
+        }, 750);
+      });
+
+    });
+  </script>
 
 
 

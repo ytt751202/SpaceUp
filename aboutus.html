@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <link rel="icon" href="./image/web_title/logo_webtitle.png">
+  <title> Shop For A Better Planet | SpaceUP | Boarden Your Future</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+  <style media="screen">
+    @import "./css/header.css";
+    /* @import "./css/index.css"; */
+    @import "./css/aboutus.css";
+    @import "./css/footer.css";
+    @import "./css/animate.min.css";
+    /* @import "./css/gasp.js"; */
+  </style>
+
+</head>
+
+<body>
+
+  <!--============ header ============-->
+
+
+  <header class="header">
+    <div class="initial"></div>
+    <nav class="nav_pc">
+      <div class="logo">
+        <a href="index.html"><img src="./image/index-logo-lg.png" alt=""></a>
+      </div>
+
+      <ul class="links_item">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="activism.html">Activism</a></li>
+        <li><a href="aboutus.html">AboutUs</a></li>
+        <li><a href="./login.html" class="account_img"><img src="./image/01.header/account.png"></a></li>
+        <li><a href="./shoppingcart.html" class="cart_img"><img src="./image/01.header/cart.png"></a></li>
+        <li><a href="./index.html" class="search_img"><img src="./image/01.header/search.png"></a></li>
+      </ul>
+    </nav>
+
+
+    <div class="smlnav">
+      <div class="smlnav_icon">
+        <a href="./index.html" class="icon_img"><img src="./image/index-logo-lg.png"></a>
+      </div>
+      <div class="hamburg">
+        <a href="#" class="rwd-menu"><img src="./image/01.header/menu-rwd.png"></a>
+      </div>
+    </div>
+
+    <!-- side menu -->
+    <aside class="aside-rwd">
+      <div class="logo">
+        <div class="side-logo">
+          <img src="./image/index-logo-lg.png" alt="">
+        </div>
+        <div class="close_icon">
+          <a href="#" class="rwd-close"><img src="./image/01.header/close-rwd.png"></a>
+        </div>
+      </div>
+
+      <ul class="links_item">
+        <li><a href="camping.html">Shop</a></li>
+        <li><a href="#">Activism</a></li>
+        <li><a href="#">AboutUs</a></li>
+        <li><a href="./login.html" class="account_img"><img src="./image/01.header/account.png"></a></li>
+        <li><a href="./shoppingcart.html" class="cart_img"><img src="./image/01.header/cart.png"></a></li>
+        <li><a href="./index.html" class="search_img"><img src="./image/01.header/search.png"></a></li>
+      </ul>
+    </aside>
+
+  </header>
+
+  <!-- ============ main 區塊 ============ -->
+
+  <section class="section1">
+    <div class="intro">
+      <div class="textAll">
+        <h1>About SpaceUP</h1>
+        <span>Be One With Our Planet</span>
+      </div>
+      <div class="bg_s1"></div>
+    </div>
+  </section>
+
+  <section class="section2 top">
+    <div class="claim">
+      <hr>
+      <h1>shopping for helping</h1>
+      <span>SpaceUp Store provides an online alternative so that consumers can have easy access to more eco-friendly and healthier products from locally manufactured. We belive in the power of taking actions.</span>
+    </div>
+  </section>
+
+  <section class="section2 middle">
+    <div class="claim">
+      <hr>
+      <h1>earth-friendly</h1>
+      <span>SpaceUp Store carries products that are earth and ocean friendly, all natural, sustainably sourced, palm oil free, cruelty free, and zero waste!</span>
+    </div>
+  </section>
+
+  <section class="section2 bottom">
+    <div class="claim">
+      <hr>
+      <h1>SpaceUP Store</h1>
+      <span>Throughout the years of developing, we are seeing the landscape has been changed also the impact humans have on the outdoors. We believe in the power of gathering with others. Every changes make impact.</span>
+  </section>
+
+
+  <!--============ footer ============-->
+
+  <footer class="footer">
+    <nav class="footer">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./image/index-logo-lg.png" alt=""></a>
+      </div>
+
+      <ul class="footer_links_item">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="activism.html">Activism</a></li>
+        <li><a href="aboutus.html">AboutUs</a></li>
+      </ul>
+
+      <ul class="footer_icons">
+        <li><a href="http://www.facebook.com"><img src="image/footer/Facebook.png"> </a></li>
+        <li><a href="http://www.instargram.com"><img src="./image/footer/Instagram.png"> </a></li>
+        <li><a href="http://www.twitter.com"><img src="./image/footer/Twitter.png"> </a></li>
+      </ul>
+    </nav>
+
+    <div class="end">
+      © Company Name 2020. All rights reserved.
+    </div>
+
+    <button type="button" id="go_top">↑</button>
+  </footer>
+
+  <script src="./css/gsap.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script>
+    // forHamburg
+    $(function() {
+      $("div.hamburg a.rwd-menu").on("click", function(e) {
+        e.preventDefault();
+        $("aside.aside-rwd").toggleClass("-on");
+
+      });
+      $(".close_icon .rwd-close").on("click", function() {
+        $("aside.aside-rwd").toggleClass("-on");
+      });
+    });
+  </script>
+
+  <!-- forBanner -->
+  <script type="text/javascript">
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("picDesk");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3500);
+    }
+  </script>
+
+  <!-- for slideTop btn -->
+  <script type="text/javascript">
+    // DOM 載入完成後執行
+    $(function() {
+
+      // 點擊按鈕，頁面滑到最上方
+      $("#go_top").on("click", function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: 0
+        }, 750);
+      });
+
+    });
+  </script>
+
+
+
+</body>
+
+</html>

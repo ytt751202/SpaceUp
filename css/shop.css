@@ -17,6 +17,75 @@ ul, li, h1 {
   box-sizing: border-box;
 }
 
+/* 頁籤區塊 */
+.tab_container .tab_list_block {
+  padding-left: 20px;
+}
+
+/* 頁籤列表 */
+.tab_container .tab_list_block ul.tab_list {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.tab_container .tab_list_block ul.tab_list>li {
+  display: inline-block;
+}
+
+.tab_container .tab_list_block ul.tab_list>li>a {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid black;
+  padding: 2px 20px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  color: #ccc;
+  position: relative;
+  top: 1px;
+}
+
+/* 畫出底部黑線 */
+.tab_container .tab_list_block ul.tab_list>li>a::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  height: 1px;
+  background-color: black;
+  bottom: -1px;
+  left: -1px;
+  z-index: 1;
+}
+
+.tab_container .tab_list_block ul.tab_list>li>a.-on {
+  color: black;
+}
+
+/* 將底部黑線改成白色 */
+.tab_container .tab_list_block ul.tab_list>li>a.-on::after {
+  background-color: white;
+  width: 100%;
+  left: 0;
+}
+
+/* 頁籤內容區塊 */
+.tab_container .tab_contents {
+  border: 2px solid black;
+}
+
+.tab_container .tab_contents .tab {
+  padding: 10px;
+  display: none;
+}
+
+.tab_container .tab_contents .tab.-on {
+  display: block;
+}
+
+/* ================================ */
+/* pic container */
 section.section1 .intro {
   padding: 20px;
   display: flex;
@@ -46,155 +115,222 @@ section.section1 .img_s1 img {
   width: 100%;
 }
 
-.breadandSort{
-  border: 1px solid yellow;
+.breadandSort {
   height: 50px;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 80px;
+  padding: 0px 50px;
+  background-color: #e9ecef;
+  max-width: calc(100% - 80px);
+  margin: auto;
+}
 }
 
-div.breadcrumb{
-  /* background-color: #e9ecef; */
-}
-div.breadcrumb ol.breadcrumb_list{
+
+.breadcrumb ol.breadcrumb_list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-div.breadcrumb ol.breadcrumb_list > li{
+
+.breadcrumb ol.breadcrumb_list>li {
   display: inline-block;
   margin-right: 10px;
 }
 
-div.breadcrumb ol.breadcrumb_list > li::before{
+.breadcrumb ol.breadcrumb_list>li::before {
   content: "/";
   font-size: 18px;
   color: #aaa;
   margin-right: 12px;
 }
-div.breadcrumb ol.breadcrumb_list > li:first-child::before{
+
+.breadcrumb ol.breadcrumb_list>li:first-child::before {
   content: "";
   margin-right: 0;
 }
 
-div.breadcrumb ol.breadcrumb_list > li > a{
+.breadcrumb ol.breadcrumb_list>li>a {
   text-decoration: none;
   display: inline-block;
   color: #8f9194;
 }
 
-div.breadcrumb ol.breadcrumb_list > li > a:hover{
+.breadcrumb ol.breadcrumb_list>li>a:hover {
   color: #0056b3;
 }
 
-.sortBy{
-  border:1px solid green;
+.sortBy {
   cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sortBy:hover ul.sort{
+.sortBy:hover ul.sort {
   display: block;
 }
 
-ul.sort{
-  position: absolute;
-  top: 540px;
-  list-style: none;
-  border: 1px solid;
-  line-height: 40px;
-  font-size: 16px;
-  width: 200px;
-  height: 360px;
-  padding: 15px;
-  background-color: #f0f0f0;
+.filterIcon {
+  width: 50px;
+  padding-left: 20px;
   display: none;
 }
 
-
-ul.sort li a{
-  text-decoration: none;
-  color:black;
+.filterIcon img {
+  width: 100%;
 }
 
-ul.sort li a{
-  text-decoration: none;
-  color:black;
+ul.sort {
+  position: absolute;
+  top: 100%;
+  list-style: none;
+  line-height: 25px;
+  font-size: 15px;
+  width: 159px;
+  height: 218px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  display: none;
+  left: 0px;
 }
 
-main.main{
+ul.sort li a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.sort li a {
+  text-decoration: none;
+  color: black;
+}
+
+main.main {
   display: flex;
   padding: 20px;
-  border: 1px solid red;
   justify-content: space-evenly;
-  }
-
-aside.aside{
-  max-width: 320px;
-  width: 100%;
-  border:1px solid;
 }
 
-aside.aside ul.nav_list{
+aside.aside {
+  max-width: 320px;
+  width: 100%;
+  border: 1px solid lightgrey;
+}
+
+aside.aside button.btn_modal_close {
+  display: none;
+}
+
+aside.aside ul.nav_list {
   list-style: none;
 }
 
-aside.aside ul.nav_list li a{
+aside.aside ul.nav_list li a {
   text-decoration: none;
   color: #837b7b;
   font-size: 18px;
   line-height: 30px;
 }
 
-aside.aside ul.nav_list li a::before{
-    content: "⬜ ";
-}
-aside.aside ul.nav_list li a:hover{
-  color:black;
+aside.aside ul.nav_list li a::before {
+  content: "⬜ ";
 }
 
-aside.aside ul.nav_list li{
-  padding:0px 30px;
+aside.aside ul.nav_list li a:hover {
+  color: black;
 }
 
+aside.aside ul.nav_list li {
+  padding: 0px 30px;
+}
 
-
-
-aside.aside ul.nav_list li:first-child::before{
+aside.aside ul.nav_list li:first-child::before {
   content: "";
 }
 
-
- /* products gallery */
-section.container{
-  border:1px solid purple;
-  max-width:1065px;
-  width:100%;
+/* products gallery */
+section.container {
+  max-width: 1065px;
+  width: 100%;
 }
 
-section.container ul.item_list{
+section.container ul.item_list {
   list-style: none;
-  border:1px solid green;
   display: flex;
   flex-wrap: wrap;
-  width:100%;
+  width: 100%;
 }
 
-section.container ul.item_list li{
-  margin: 0px 8px 0px 8px;
+section.container ul.item_list li {
+  margin: 0px 1% 0px 1%;
+  width: 31.3%;
 }
 
+section.container ul.item_list li img {
+  width: 100%;
+}
 
+/* pagination */
+.pagination_block {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
 
+.pagination_block>ul.pagination {
+  list-style: none;
+  margin: 0;
+  padding-top: 20px;
+  font-size: 0;
+}
 
+.pagination_block>ul.pagination>li {
+  display: inline-block;
+}
 
+.pagination_block>ul.pagination>li>a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #dee2e6;
+  border-right: 0;
+  /* 將全部的右邊框都移除 */
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: black;
+}
 
+.pagination_block>ul.pagination>li:last-child>a {
+  border-right: 1px solid #dee2e6;
+  border-radius: 0 5px 5px 0;
+}
 
+.pagination_block>ul.pagination>li:first-child>a {
+  display: inline-block;
+  border-radius: 5px 0 0 5px;
+}
 
+.pagination_block>ul.pagination>li>a.-on {
+  background-color: #e9ecef;
+  color: #0056b3;
+}
 
+.pagination_block>ul.pagination>li>a:hover {
+  background-color: #e9ecef;
+  color: #0056b3;
+}
 
+.tab_container .tab_contents ul.item_list a {
+  text-decoration: none;
+  color: black;
+}
+
+.tab_container .tab_contents ul.item_list a span.item_text {
+  line-height: 20px;
+}
 
 /* ============ 螢幕小於767px時 ============ */
 @media screen and (max-width:997px) {
@@ -204,8 +340,13 @@ section.container ul.item_list li{
     padding: 0;
   }
 
+  section.container ul.item_list li {
+    margin: 0px 1% 0px 1%;
+    width: 48%;
+  }
+
   section.section1 .textAll {
-    padding: 5px;
+    padding: 20px;
     margin: auto;
   }
 
@@ -217,20 +358,42 @@ section.container ul.item_list li{
     font-size: 16px;
   }
 
-  aside.aside{
+  aside.aside {
     top: 0;
+    width: 100%;
     height: 100%;
     transform: translateX(-100%);
+    position: fixed;
+    background: #fff;
+    left: 0;
+    transition: .5s ease-in-out;
+    z-index: 999;
   }
 
   aside.aside.-on {
     transform: translateX(0%);
+    transition: .5s ease-in-out;
   }
 
-  div.breadcrumb ol.breadcrumb_list{
+  aside.aside button.btn_modal_close {
+    display: block;
+    border: 1px transparent;
+    background-color: transparent;
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+
+  .breadandSort{
+    padding: 20px;
+  }
+
+  .breadcrumb ol.breadcrumb_list {
     display: none;
   }
 
-
-
+  .filterIcon {
+    display: block;
+  }
 }

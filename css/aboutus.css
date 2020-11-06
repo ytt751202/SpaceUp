@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+ul, li, h1 {
+  margin: 0;
+  padding: 0
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section.section1 .bg_s1 {
+  background-image: url("../image/aboutus/aboutus_content.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 700px;
+  width: 100%;
+  padding-top: 37.7%;
+  margin: -100px auto 0;
+}
+
+section.section1 .textAll {
+  max-width: 500px;
+  width:100%;
+  margin: auto;
+}
+
+section.section1 .textAll h1 {
+  font-size: 100px;
+}
+
+section.section1 .textAll span {
+  font-size: 40px;
+}
+
+section.section2{
+  /* border: 1px solid red; */
+  margin-top: 150px;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("../image/aboutus/helping.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 bottom;
+  width: 100%;
+  height: 800px;
+
+}
+
+section.section2 .claim{
+  /* border: 1px solid green; */
+  font-size: 20px;
+  max-width: 550px;
+  text-align: right;
+  margin-right: 200px;
+  padding-top: 100px;
+}
+
+section.section2 .claim hr{
+  width: 70px;
+  height: 10px;
+  margin: 0 0 40px 480px;
+  background-color: lightgrey;
+}
+
+section.section2 .claim span{
+  line-height: 30px;
+}
+
+section.middle{
+  margin-top: 0px;
+  background-image: url("../image/aboutus/eco.jpg");
+}
+section.middle{
+  display: flex;
+  justify-content: flex-start;
+}
+
+section.middle .claim{
+    text-align: left;
+    margin-left: 200px;
+}
+
+section.middle .claim hr{
+  width: 70px;
+  height: 10px;
+  margin: 0 0 40px 0px;
+  background-color: grey;
+}
+
+section.middle .claim span{
+  line-height: 30px;
+}
+
+section.bottom{
+  margin-top: 0px;
+  background-image: url("../image/aboutus/spaceup.jpg");
+}
+section.bottom{
+  display: flex;
+  justify-content: flex-end;
+}
+
+section.bottom .claim{
+    text-align: right;
+    margin-left: 200px;
+    color:#fff;
+}
+
+section.bottom .claim hr{
+  width: 70px;
+  height: 10px;
+  margin: 0 auto 40px;
+  background-color: rgb(27, 37, 34);
+}
+section.bottom .claim span{
+  line-height: 30px;
+}
+
+
+
+
+
+
+/* ============ 螢幕小於767px時 ============ */
+@media screen and (max-width:997px){
+
+  section.section1 .intro {
+    display:block;
+    margin-top:0px;
+}
+
+  section.section1 .bg_s1{
+    display: none;
+  }
+
+  section.section1 .textAll{
+    background-image: url("../image/aboutus/aboutus_content.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color:#fff;
+  }
+  section.section1 .textAll h1{
+    font-size: 70px;
+  }
+  section.section1 .textAll span{
+    font-size: 30px;
+  }
+
+  section.top{
+    display: block;
+    margin-top: 0px;
+  }
+  section.top .claim{
+    margin-right: 0px;
+    text-align: center;
+    /* padding: 40px 20px 207px; */
+  }
+  section.top .claim hr{
+    margin:20px auto;
+  }
+
+  section.middle{
+    display: block;
+    margin-top: 0px;
+  }
+  section.middle .claim{
+    margin: 0px;
+    text-align: center;
+    /* padding: 40px 20px 207px; */
+  }
+  section.middle .claim hr{
+    margin:20px auto;
+  }
+
+  section.bottom{
+    display: block;
+    margin-top: 0px;
+  }
+  section.bottom .claim{
+    margin: 0px;
+    text-align: center;
+    /* padding: 40px 20px 207px; */
+  }
+  section.bottom .claim hr{
+    margin:20px auto;
+  }
+
+
+
+
+
+}

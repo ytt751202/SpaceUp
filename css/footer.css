@@ -54,17 +54,22 @@ footer.footer logo a img{
   width:100%;
 }
 
-  /* back to top from snow peak{
-  display: flex;
-      position: fixed;
-      right: 30px;
-      bottom: 30px;
-      background: #fff;
-      z-index: 3;
-      opacity: 0;
-      padding: 16px 11px;
-      transition: all .3s ease;
-      } */
+#go_top{
+  width: 40px;
+  height: 40px;
+  background: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+  border:1px solid white;
+}
+
 
 /* ============ 螢幕小於767px時 ============ */
 @media screen and (max-width:767px) {

@@ -35,7 +35,7 @@
       </div>
 
       <ul class="links_item">
-        <li><a href="camping.html">Shop</a></li>
+        <li><a href="shop.html">Shop</a></li>
         <li><a href="#">Activism</a></li>
         <li><a href="#">AboutUs</a></li>
         <li><a href="./login.html" class="account_img"><img src="./image/01.header/account.png"></a></li>
@@ -66,9 +66,9 @@
       </div>
 
       <ul class="links_item">
-        <li><a href="camping.html">Shop</a></li>
-        <li><a href="#">Activism</a></li>
-        <li><a href="#">AboutUs</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="activism.html">Activism</a></li>
+        <li><a href="aboutus.html">AboutUs</a></li>
         <li><a href="./login.html" class="account_img"><img src="./image/01.header/account.png"></a></li>
         <li><a href="./shoppingcart.html" class="cart_img"><img src="./image/01.header/cart.png"></a></li>
         <li><a href="./index.html" class="search_img"><img src="./image/01.header/search.png"></a></li>
@@ -85,9 +85,9 @@
         <div class="bannerPic">
           <div class="picDesk">
             <img class="pic4 w3-animate-fading" src="./image/02.1st/index.jpg">
-            <div class="pictxt">
+            <div class="pictxt firstpara">
               <span class="text">
-                <h1>Keep It Green To the Space</h1>Supporting a plastic-free outdoor life with us
+                <h1>keep the space Green</h1>Be plastic-free with us
               </span>
             </div>
           </div>
@@ -98,7 +98,7 @@
           </div>
           <div class="picDesk">
             <img class="pic2 w3-animate-fading" src="./image/02.1st/essential.jpg">
-            <div class="pictxt">
+            <div class="pictxt secondpara">
               <h1>Winter Sales<br>30%OFF</h1>
             </div>
           </div>
@@ -128,7 +128,7 @@
       <div class="forshop">
         <div class="shop_pic_border">
           <div class="shop_pic">
-            <a href="#" class="shop_pic"><img src="./image/shop_pic.jpg" alt=""></a>
+            <a href="shop.html" class="shop_pic"><img src="./image/shop_pic.jpg" alt=""></a>
           </div>
         </div>
 
@@ -147,17 +147,12 @@
             Winter Sales 30%OFF
           </div>
           <div class="shop_subtitle3">
-            <a href="#" class="shop_subtitle3">view shop</a>
+            <a href="shop.html" class="shop_subtitle3">view shop</a>
           </div>
-
         </div>
-
-
       </div>
-
-
-
     </section>
+
 
     <section class="section4">
 
@@ -167,46 +162,70 @@
 
         <div class="gallery_container">
           <div class="gallery">
+            <div class="img-all img-backpacker">
+              <button type="button" class="img_hover_btn btn_modal">Quick View</button>
+            </div>
             <a href="shop.html" class="backpacker">
-              <div class="img-all img-backpacker">
-                <button class="img_hover_btn">Quick View</button>
-              </div>
               <div class="desc">100% Repreve®Polyester Backpacker<br><span>$217.50</span></div>
-
             </a>
           </div>
 
+          <!-- Modal 彈跳視窗內容-->
+          <div class="overlay">
+            <article>
+              <div class="container">
+                <button type="button" class="btn_modal_close">✖</button>
+                <div class="pageAndPic">
+                  <div class="left_pic">
+                    <img id="overlay" src="./image/featured/backpacker.jpg">
+                  </div>
+                  <div class="page">
+                    ⚫
+                  </div>
+                </div>
 
+                <div class="right">
+                  <h2>100% Repreve®Polyester Backpacker</h2>
+                  <span>$217.50</span>
+                  <div class="twoBtns">
+                    <button type="submit" name="add" id="add-to-cart" class="btn btn-outline">add to cart</button>
+                    <button type="input" name="qua" id="quality" class="btn btn-outline">﹣1﹢</button>
+                  </div>
+                  <p>The Japanese-designed Roll Top Backpack Rolltop Backpack is a waterproof bag. Use it for commuting or rainy day hikes. The backpack features an exterior pocket, ample interior storage and a TPU coating so it’s fully
+                    water-repellent. Pair with the Ultralight Umbrella.</p>
+                  <a href="#">more info</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
           <div class="gallery">
+            <div class="img-all img-bikelight">
+              <button class="img_hover_btn ">Quick View</button>
+            </div>
             <a href="shop.html" class="bikelight">
-              <div class="img-all img-bikelight">
-                <button class="img_hover_btn">Quick View</button>
-              </div>
               <div class="desc">Baterry-Free Bike Light<br><span>$59.50</span></div>
             </a>
           </div>
 
-
           <div class="gallery">
+            <div class="img-all img-kitchen">
+              <button class="img_hover_btn ">Quick View</button>
+            </div>
             <a href="shop.html" class="kitchen">
-              <div class="img-all img-kitchen">
-                <button class="img_hover_btn">Quick View</button>
-              </div>
               <div class="desc">Outdoor Kitchen Set<br><span>$644.95</span></div>
             </a>
           </div>
 
           <div class="gallery">
+            <div class="img-all img-cooker">
+              <button class="img_hover_btn ">Quick View</button>
+            </div>
             <a href="shop.html" class="cooker">
-              <div class="img-all img-cooker">
-                <button class="img_hover_btn">Quick View</button>
-              </div>
               <div class="desc">Titanium Cook & Save<br><span>$217.50</span></div>
             </a>
           </div>
         </div>
-
     </section>
 
     <section class="section5">
@@ -274,7 +293,14 @@
           <h1>fighting for home</h1>
         </div>
       </div>
+      <div class="butDire">
+        <button type="button" name="toleft"><<</button>
+            <button type="button" name="toright">>></button>
+      </div>
     </section>
+
+
+
 
     <section class="section8">
       <h1>join spaceUP</h1>
@@ -292,30 +318,36 @@
     <nav class="footer">
       <div class="logo">
         <a href="index.html">
-        <img src="./image/index-logo-lg.png" alt=""></a>
+          <img src="./image/index-logo-lg.png" alt=""></a>
       </div>
 
       <ul class="footer_links_item">
-        <li><a href="camping.html">Shop</a></li>
-        <li><a href="#">Activism</a></li>
-        <li><a href="#">AboutUs</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="activism.html">Activism</a></li>
+        <li><a href="aboutus.html">AboutUs</a></li>
       </ul>
 
-        <ul class="footer_icons">
-          <li><a href="http://www.facebook.com"><img src="image/footer/Facebook.png"</a></li>
-          <li><a href="http://www.instargram.com"><img src="./image/footer/Instagram.png"</a></li>
-          <li><a href="http://www.twitter.com"><img src="./image/footer/Twitter.png"</a></li>
+      <ul class="footer_icons">
+        <li><a href="http://www.facebook.com"><img src="image/footer/Facebook.png"> </a></li>
+        <li><a href="http://www.instargram.com"><img src="./image/footer/Instagram.png"> </a></li>
+        <li><a href="http://www.twitter.com"><img src="./image/footer/Twitter.png"> </a></li>
       </ul>
     </nav>
 
     <div class="end">
       © Company Name 2020. All rights reserved.
     </div>
+
+    <!-- slideTop button -->
+    <button type="button" id="go_top">↑</button>
+
   </footer>
 
   <script src="./css/gsap.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
+    // forHamburg
     $(function() {
       $("div.hamburg a.rwd-menu").on("click", function(e) {
         e.preventDefault();
@@ -328,7 +360,29 @@
     });
   </script>
 
+  <!-- Modal -->
+  <script type="text/javascript">
+    $(function() {
 
+      // 開啟 Modal 彈跳視窗
+      $("button.btn_modal").on("click", function() {
+        $("div.overlay").addClass("-on");
+      });
+
+      // 關閉 Modal
+      $("button.btn_modal_close").on("click", function() {
+        $("div.overlay").addClass("-opacity-zero");
+
+        // 設定隔一秒後，移除相關 class
+        setTimeout(function() {
+          $("div.overlay").removeClass("-on -opacity-zero");
+        }, 1000);
+      });
+
+    });
+  </script>
+
+  <!-- forBanner -->
   <script type="text/javascript">
     var myIndex = 0;
     carousel();
@@ -347,6 +401,25 @@
       setTimeout(carousel, 3500);
     }
   </script>
+
+
+  <!-- for slideTop btn -->
+  <script type="text/javascript">
+    // DOM 載入完成後執行
+    $(function() {
+
+      // 點擊按鈕，頁面滑到最上方
+      $("#go_top").on("click", function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: 0
+        }, 750);
+      });
+
+    });
+  </script>
+
+
 
 
 

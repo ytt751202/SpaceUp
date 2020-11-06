@@ -30,15 +30,21 @@ h1 {
 .bannerPic .pictxt {
   position: absolute;
   left: 0;
-  background: rgba(255, 255, 255, 0.3);
-  color: #000;
+  top: 30px;
+  /* background: rgba(255, 255, 255, 0.3); */
+  color: white;
   display: inline-flex;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  font-size: 35px;
+  font-size:80px;
+  font-family: "Montserrat" !important;
+
+}
+
+.bannerPic .secondpara{
+  color:black;
 }
 
 section.section2 {
@@ -119,6 +125,7 @@ section.section3 .forshop {
 .shop_words .shop_subtitle3 a.shop_subtitle3:hover {
   background-color: lightgrey;
   color: #fff;
+  transition: .5s;
 }
 
 .feature h1 {
@@ -173,6 +180,7 @@ section.section3 .forshop {
   border: 1px solid #000;
   width: 200px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .img_hover_btn:hover {
@@ -243,6 +251,124 @@ section.section3 .forshop {
   text-decoration: none;
   color: black;
 }
+
+/* modal  */
+
+.overlay button{
+  cursor: pointer;
+}
+div.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, .5);
+
+  /* 預設：完全透明；設定 z-index: -1 會在整個頁面的後方，看不到，才不會擋到頁面元素。 */
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 1s;
+}
+div.overlay.-on{
+
+  /* 加上 -on 之後，Modal 漸漸出現，因為有設定 transition */
+  opacity: 1;
+  z-index: 1;
+}
+
+div.overlay.-opacity-zero{
+  /* 關閉 Modal 時，先讓 opacity設定0，就會慢慢變成完全透明，但這時會擋到後面的元素，所以要再移除 -on 及 -opacity-zero 這兩個 class */
+  opacity: 0;
+}
+
+/* 元素 article 置中及基本樣式 */
+div.overlay > article{
+  background-color: white;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feature .overlay.-on .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.feature .overlay.-on .container button.btn_modal_close{
+  border:1px transparent;
+  background-color: transparent;
+  font-size: 35px;
+  position: absolute;
+  top:0;
+  right:0;
+  padding: 20px;
+}
+
+.feature .overlay.-on .container .page{
+  padding-top: 20px;
+}
+
+.feature .overlay.-on .container .pageAndPic{
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.feature .overlay.-on .container .left_pic{
+  width: 323px;
+}
+
+.feature .overlay.-on .container .right h2, .feature .overlay.-on .container .right span{
+  font-size: 35px;
+}
+
+.feature .overlay.-on .container .right{
+  padding: 20px 20px 20px 40px;
+  text-align: left;
+  }
+
+  .feature .overlay.-on .container .twoBtns{
+    margin: 30px 0px;
+  }
+
+.feature .overlay.-on .container .twoBtns button#add-to-cart {
+  padding: 10px 20px;
+  background: #fff;
+  border: 1.5px solid black;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.feature .overlay.-on .container .twoBtns button#add-to-cart:hover{
+  transition: .5s;
+  background: lightgrey;
+  color: #fff;
+  border: 1.5px solid black;
+}
+
+.feature .overlay.-on .container .twoBtns button#quality {
+  padding: 10px 20px;
+  background: #fff;
+  border: 1.5px solid black;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.feature .overlay.-on .container .right a{
+  text-decoration:underline;
+  color:black;
+}
+
+
 
 section.section5 .ackbg {
   padding-top: 300px;
@@ -375,9 +501,16 @@ section.section8 button{
 section.section8 .input{
   text-align: center;
 }
-
-
-
+.butDire{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.butDire button{
+  width:50px;
+  height: 30px;
+  margin:0 20px;
+}
 
 
 /* ============ 螢幕小於767px時 ============ */
@@ -390,7 +523,21 @@ section.section8 .input{
   }
 
   .bannerPic .pictxt span.text{
-    font-size: 50%;
+    font-size: 32px;
+    position: absolute;
+    left: 0px;
+    top: 0
+  }
+
+  .bannerPic .pictxt span.text h1{
+    width: 360px
+  }
+
+  .bannerPic .secondpara{
+    font-size: 32px;
+    position: absolute;
+    color: white;
+    top: 130px
   }
 
   section.section2 .mission h1 {
@@ -446,6 +593,27 @@ section.section8 .input{
   .img_hover_btn {
     width: 120px;
   }
+
+  /* div.overlay > article{
+    max-width: 767px;
+    width: 100%;
+  } */
+
+
+
+.feature .overlay.-on .container{
+  display: block;
+}
+.feature .overlay.-on .container p{
+  display: none;
+}
+.feature .overlay.-on .container .right h2, .feature .overlay.-on .container .right span{
+  font-size:24px;
+}
+.feature .overlay.-on .container .left_pic {
+  width:60%;
+}
+
 
   section.section5 .ackbg {
     padding-top: 180px;
