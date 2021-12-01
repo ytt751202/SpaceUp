@@ -72,7 +72,7 @@ ul, li, h1 {
 
 /* 頁籤內容區塊 */
 .tab_container .tab_contents {
-  border: 2px solid black;
+/*   border: 2px solid black; */
 }
 
 .tab_container .tab_contents .tab {
